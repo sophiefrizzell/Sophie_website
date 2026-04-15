@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Palm Tree Paradise</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/myStyles.css">
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Resume</a>
+        <a href="#top">Palm Tree Paradise</a>
+        <a href="ai.html">Game</a>
+        <br>
+        <a href="#places">Locations</a>
+        <a href="#video">Video</a>
+        <a href="#tableau">Beach Data</a>
+    </div>
+
+<header class="masthead" id="top" style="background-image: url('assets/img/palmtrees.jpeg')">
+    <div class="overlay">
+        <div class="site-heading">
+            <h1>Palm Tree Paradise</h1>
+            <p>Your guide to tropical places</p>
+        </div>
+    </div>
+</header>
+
+
+    <!-- PLACES -->
+    <div id="places" class="section">
+        <h2>𓆈 Top Palm Tree Locations in the USA</h2>
+
+        <ol>
+            <li><b>Hawaii</b>
+                <ul>
+                    <li>Waikiki Beach</li>
+                    <li>Maui Coast</li>
+                </ul>
+            </li>
+            <li><b>California</b>
+                <ul>
+                    <li>Los Angeles</li>
+                    <li>San Diego</li>
+                </ul>
+            </li>
+            <li><b>Florida</b>
+                <ul>
+                    <li>Miami</li>
+                    <li>Key West</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="card">
+            <h3>Waikiki</h3>
+            <img src="assets/img/Waikiki.jpeg">
+        </div>
+
+        <div class="card">
+            <h3>Los Angeles</h3>
+            <img src="assets/img/LA2.jpeg">
+        </div>
+
+        <div class="card">
+            <h3>Miami</h3>
+            <img src="assets/img/Miami.jpeg">
+        </div>
+    </div>
+
+
+    <div id="video" class="section">
+        <h2>𓇼 Palm Trees - Surfaces 𓇼</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1amdPTCKEqs?si=ibv4XdhQOolR8BM2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+    <div id="tableau" class="section">
+        <h2>𓆉 Beach Towns by Price</h2>
+
+        <div class='tableauPlaceholder' id='viz1776212202047' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4S&#47;4SM5XCD8F&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;4SM5XCD8F' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4S&#47;4SM5XCD8F&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1776212202047');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='650px';vizElement.style.height='777px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <!-- JS -->
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                alert("You clicked on " + card.querySelector('h3').innerText);
+            });
+        });
+    </script>
+
+</body>
+</html>

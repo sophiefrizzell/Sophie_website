@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e8f6f3;
+    color: #2c3e50;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    color: #1abc9c;
+}
+
+.nav {
+    background-color: #16a085;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header {
+    height: 400px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Palm_trees_beach.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 8px;
+    
+}
+
+.section {
+    padding: 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.masthead {
+    position: relative;
+    background-image: url('images/palmtrees.jpg'); /* CHANGE THIS */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.site-heading {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.site-heading h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.site-heading .subheading {
+    font-size: 1.5rem;
+}
